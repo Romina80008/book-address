@@ -4,7 +4,17 @@ const ContactForm = (props) => (
 	<div>
 		<input 
 			type="text" 
-			value={props.value}
+			value={props.firstName}
+			onChange={props.onChange} 
+		/>
+		<input 
+			type="text" 
+			value={props.lastName}
+			onChange={props.onChange} 
+		/>
+		<input 
+			type="text" 
+			value={props.phone}
 			onChange={props.onChange} 
 		/>
 
